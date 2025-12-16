@@ -1,22 +1,22 @@
 #Creating Person class with 3 atributes and 2 methods
 class Person(object):
-    def __init__(self, name:str, age: int, adress: str):
+    def __init__(self, name:str, age: int, address: str):
         self.name = name
         self.age = age
-        self.adress = adress
+        self.address = address
     
     def __str__(self):
-        return f"{self.name}, {self.age} years old, live in {self.adress}"
+        return f"{self.name}, {self.age} years old, live in {self.address}"
     
-    def show_adress(self):
-        print(f"{self.name} live in {self.adress}")
+    def show_address(self):
+        print(f"{self.name} live in {self.address}")
     
-    def change_adress(self, new_adress: str):
-        self.adress = new_adress
+    def change_address(self, new_address: str):
+        self.address = new_address
 
-person_1 = Person(name="Guilherme", age=20, adress="Brazil")
+person_1 = Person(name="Guilherme", age=20, address="Brazil")
 
 print(person_1)
-person_1.show_adress()
-person_1.change_adress(new_adress="Brazil/SP")
-person_1.show_adress()
+person_1.show_address()
+person_1.change_address(new_address="Brazil/SP")
+person_1.show_address()
