@@ -1,3 +1,4 @@
+#Creating Person class with 3 atributes and 2 methods
 class Person(object):
     def __init__(self, name:str, age: int, adress: str):
         self.name = name
