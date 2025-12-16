@@ -6,10 +6,10 @@ class Person(object):
         self.address = address
     
     def __str__(self):
-        return f"{self.name}, {self.age} years old, live in {self.address}"
+        return f"{self.name}, {self.age} years old, lives in {self.address}"
     
-    def show_address(self):
-        print(f"{self.name} live in {self.address}")
+    def show_address(self) -> str:
+        return f"{self.name} live in {self.address}"
     
     def change_address(self, new_address: str):
         self.address = new_address
