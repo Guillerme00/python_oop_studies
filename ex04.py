@@ -10,16 +10,16 @@ class VectorOperations():
     def __init__(self):
         pass
     
-    def vector_sum(self, v1: Vector, v2: Vector) -> Vector:
+    def vector_sum(self, v1: Vector, v2: Vector) -> list:
         return [(v1._x + v2._x), (v1._y + v2._y), (v1._z + v2._z)]
     
-    def vector_sub(self, v1: Vector, v2: Vector) -> Vector:
+    def vector_sub(self, v1: Vector, v2: Vector) -> list:
         return [(v1._x - v2._x), (v1._y - v2._y), (v1._z - v2._z)]
     
     def vector_dot(self, v1: Vector, v2: Vector) -> int:
         return (v1._x * v2._x) + (v1._y * v2._y) + (v1._z * v2._z)
     
-    def vector_product(self, v1: Vector, v2: Vector) -> Vector:
+    def vector_product(self, v1: Vector, v2: Vector) -> list:
         return [((v1._y * v2._z) - (v1._z * v2._y)), ((v1._z * v2._x) - (v1._x * v2._z)), ((v1._x * v2._y) - (v1._y * v2._x))]
     
     def vector_module(self, v1: Vector) -> int:
